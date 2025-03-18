@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Mascotas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="form-container">
+            <h2>Registro de Mascotas</h2>
+            <form id="dataForm">
+                <label for="nombre">Nombre de la Mascota:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="edad">Edad (años):</label>
+                <input type="number" id="edad" required>
+
+                <label for="raza">Raza:</label>
+                <input type="text" id="raza" required>
+
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" required>
+                    <option value="Macho">Macho</option>
+                    <option value="Hembra">Hembra</option>
+                </select>
+
+                <label for="color">Color:</label>
+                <input type="text" id="color" required>
+
+                <label for="tamano">Tamaño:</label>
+                <select id="tamano" required>
+                    <option value="Pequeño">Pequeño</option>
+                    <option value="Mediano">Mediano</option>
+                    <option value="Grande">Grande</option>
+                </select>
+
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" required>
+
+                <label for="vacunas">Vacunas:</label>
+                <input type="text" id="vacunas" required>
+
+                <label for="dueno">Nombre del Dueño:</label>
+                <input type="text" id="dueno" required>
+
+                <label for="contacto">Número de Contacto:</label>
+                <input type="tel" id="contacto" required>
+
+                <button type="button" onclick="agregarFila()">Agregar</button>
+            </form>
+        </div>
+
+        <div class="table-container">
+            <h3>Mascotas Registradas</h3>
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Raza</th>
+                        <th>Sexo</th>
+                        <th>Color</th>
+                        <th>Tamaño</th>
+                        <th>Peso</th>
+                        <th>Vacunas</th>
+                        <th>Dueño</th>
+                        <th>Contacto</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
